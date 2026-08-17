@@ -69,9 +69,31 @@ Claude 3 Opus — важный исторический эталон тонко�
 ### Линия
 `early Grok personality → Grok 2/3 reasoning → Grok 4/4.1 agent tools → expressive Grok Voice → Voice Think Fast 1.0 → Voice Think Fast 2.0 → Grok 4.5 flagship`
 
-Ранний Grok выделялся характером, неформальностью и юмором. Ранний Voice — выразительным присутствием. Более поздние поколения усилили reasoning/coding, а Grok 4.1 Fast + Agent Tools и Voice Think Fast явно двинулись в production tool-calling, low latency, support/sales/enterprise workflows.
+Ранний Grok выделялся характером, неформальностью и юмором. **Ранний Grok Voice стал особенно важным Interaction-эталоном:** пользователи описывали более длинные разговорные ответы, эмоциональную выразительность, спонтанность и сильное ощущение живого собеседника.
 
-Вопрос Velantrim: **исчезла ли часть presence или просто поменялся default behavior?** Это надо проверять Behavioral Museum, а не решать по воспоминаниям.
+**Think Fast 1.0 (23 апреля 2026)** стал первой явной reasoning/production революцией Voice: realtime reasoning без дополнительной latency, complex multi-step workflows, high-volume tool calling, support/sales/booking и реальная эксплуатация в Starlink. Одновременно в мае появились повторяющиеся community reports о более быстром, холодном, плоском или customer-service-like голосе и потере части эмоционального характера. Это корреляционный signal, не доказанная причинность checkpoint.
+
+**Think Fast 2.0 (29 июля 2026; `grok-voice-latest` → 2.0 с 5 августа)** продолжил speech-to-speech/agentic линию и существенно усилил speed-oriented сторону. Во время rollout-window пользователи независимо сообщали о резко более коротких default answers и меньшей conversational depth. Важно: первая заметная ветка таких жалоб датирована 19 июля, то есть до публичного API-релиза 2.0. Поэтому Velantrim не утверждает, что именно checkpoint 2.0 единолично вызвал изменение: возможны routing/system-prompt/token-policy/product-configuration изменения.
+
+Ключевая траектория:
+
+```text
+🎙️ expressive Voice
+❤️ presence · 💬 depth · 😂 spontaneity
+            ↓
+⚡ Think Fast 1.0
+🧠 reasoning · 🛠 tools · 📞 workflows
+            ↓
+⚡⚡ Think Fast 2.0 / rollout era
+⚡ lower latency · 🤖 stronger voice-agent direction
++ 👥 short-answer / reduced-depth reports
+            ↓
+🏢 production Voice Agent
+```
+
+Это один из лучших примеров тезиса **«модель может технически улучшиться и одновременно изменить Interaction phenotype»**.
+
+➡️ **[Подробный case study: 🎙️ GROK_VOICE_EVOLUTION.md](GROK_VOICE_EVOLUTION.md)** — отдельная хронология, таблица gains/regressions, evidence discipline и Behavioral Museum protocol.
 
 ---
 
@@ -157,7 +179,7 @@ MiniMax особенно интересен тем, что **не полност
 |---|---|---|---|---|---|
 | Claude | глубокий собеседник | reasoning + coding | long-horizon agents | очень важно | ⬆⬆⬆ |
 | GPT/ChatGPT | универсальный чат | multimodal + reasoning | professional/Codex agents | очень важно | ⬆⬆⬆ |
-| Grok | характер/юмор | reasoning + voice | production voice/tools/agents | очень важно | ⬆⬆⬆ |
+| Grok | характер/юмор | expressive Voice → Think Fast reasoning | production voice/tools/agents | **presence, depth, personality** | ⬆⬆⬆ |
 | Gemini | multimodal assistant | huge context + thinking | multimodal agents | важно | ⬆⬆⬆ |
 | DeepSeek | efficient/open | R1 reasoning | Pro/Flash roles | мало измерено | ⬆⬆⬆ |
 | Kimi | long-context assistant | coding + thinking | swarm/long-horizon | мало измерено | ⬆⬆⬆ |
