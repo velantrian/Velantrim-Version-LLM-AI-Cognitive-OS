@@ -1,3 +1,5 @@
+🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](ru/MODEL_EVOLUTION.md)
+
 # 🕰️ Model Evolution — Human Presence ↔ Engineering Power
 
 ## Why this matters
@@ -11,17 +13,16 @@ A new model may become better at:
 - tool use;
 - long-horizon autonomy;
 - structured workflows;
+- multimodality;
 - latency/cost efficiency;
 
-while its conversational style, spontaneity, humor, emotional calibration or creative voice changes in parallel.
+while its conversational style, spontaneity, humor, emotional calibration, creative voice or explanatory behavior changes in parallel.
 
 That change is not automatically degradation. Often it reflects a different optimization target.
 
 ---
 
 ## Two independent axes
-
-Velantrim tracks at least two broad dimensions:
 
 ### ❤️ Human Presence
 
@@ -32,7 +33,9 @@ Velantrim tracks at least two broad dimensions:
 - literary/creative quality;
 - explanation quality;
 - conversational depth;
-- intellectual companionship.
+- intellectual companionship;
+- calibrated disagreement;
+- personalization relevance.
 
 ### ⚙️ Engineering / Agentic Power
 
@@ -44,7 +47,8 @@ Velantrim tracks at least two broad dimensions:
 - long-horizon execution;
 - reliability;
 - verification;
-- task completion efficiency.
+- task completion efficiency;
+- cost per verified completed task.
 
 The goal is not to rank models as “good humans” or “good engineers”. The goal is to understand **what each generation is optimized to do**.
 
@@ -68,7 +72,15 @@ The goal is not to rank models as “good humans” or “good engineers”. The
 🏢 production / enterprise workflows
 ```
 
-The central research question is whether the future should force all of these traits into one checkpoint or preserve specialized interaction and capability layers.
+One useful interpretation is that the industry is moving in many areas from:
+
+> **“an AI conversational partner that can also work”**
+
+toward:
+
+> **“an AI worker that can also converse.”**
+
+This is not inherently worse. It is a different optimization direction.
 
 ---
 
@@ -197,6 +209,8 @@ For many users, voice behavior emphasized:
 - conversational presence;
 - emotionally expressive interaction.
 
+These are community-reported experiential traits and should be separated from official technical claims.
+
 ## Later Voice / Think Fast direction
 
 The product direction increasingly emphasizes:
@@ -262,8 +276,6 @@ Potential role in Velantrim:
 
 DeepSeek evolved rapidly from strong open reasoning/coding models toward explicit agent-oriented families.
 
-Current research distinction:
-
 ### Pro-class models
 
 - harder reasoning;
@@ -305,11 +317,7 @@ Kimi has increasingly emphasized:
 - vision;
 - always-on reasoning modes.
 
-Kimi is important because it combines:
-
-- relatively strong conversational/general intelligence;
-- open weights;
-- serious long-horizon coding and agent capability.
+Kimi is important because it combines relatively strong general intelligence with open weights and serious long-horizon/coding ambitions.
 
 Potential Velantrim roles:
 
@@ -428,9 +436,35 @@ It is especially relevant to Velantrim's worker/specialist layer rather than onl
 
 ---
 
+# 📊 Research scale — Human Presence vs Engineering Orientation
+
+This is a **research framing**, not a scientific final score. Hearts/gears summarize the qualitative direction discussed so far; `?` means reproducible human-facing evaluation is required.
+
+| Generation / family | ❤️ Human Presence | ⚙️ Engineering / Agentic | Main research interpretation |
+|---|---:|---:|---|
+| Claude 3 Opus | ❤️❤️❤️❤️❤️ | ⚙️⚙️ | deep conversational / creative reference |
+| Sonnet 4.5 | ❤️❤️❤️◐ | ⚙️⚙️⚙️⚙️ | coding + computer/agent productivity |
+| Opus 4.5 | ❤️❤️❤️❤️ | ⚙️⚙️⚙️⚙️◐ | strong hybrid point |
+| Later Claude | ❤️ ? | ⚙️⚙️⚙️⚙️⚙️ | long-horizon autonomous work |
+| GPT-4o era | ❤️❤️❤️❤️ | ⚙️⚙️⚙️ | multimodal assistant / voice |
+| GPT-5 / Codex era | ❤️ ? | ⚙️⚙️⚙️⚙️⚙️ | routed reasoning + engineering agents |
+| Early Grok Voice | ❤️❤️❤️❤️◐ | ⚙️⚙️ | expressive realtime conversation |
+| Later Grok Voice | ❤️❤️❤️ ? | ⚙️⚙️⚙️⚙️ | low-latency production voice workflows |
+| Grok 4.x | ❤️ ? | ⚙️⚙️⚙️⚙️⚙️ | frontier reasoning / agent efficiency |
+| Modern Gemini | ❤️ ? | ⚙️⚙️⚙️⚙️ | multimodal compute / worker platform |
+| DeepSeek Pro | ❤️ ? | ⚙️⚙️⚙️⚙️◐ | heavy reasoning / coding agent |
+| DeepSeek Flash | ❤️ ? | ⚙️⚙️⚙️ | cheap worker swarm |
+| Kimi frontier | ❤️ ? | ⚙️⚙️⚙️⚙️ | open long-context autonomy |
+| Qwen frontier | ❤️ ? | ⚙️⚙️⚙️⚙️ | broad open specialization ecosystem |
+| Mistral stack | ❤️ ? | ⚙️⚙️⚙️⚙️ | explicit role specialization |
+
+This table must evolve into measured Model Genome data rather than remain subjective shorthand.
+
+---
+
 # 🧪 Evidence discipline
 
-Every claim in future versions of this document should be tagged as one of:
+Every future claim in this document should be tagged as one of:
 
 - 🟢 **Official** — documented by the provider;
 - 🔬 **Independent** — benchmark or third-party evaluation;
@@ -519,3 +553,5 @@ reasoning · coding · agents · tools
 ```
 
 The future system should not have to choose between a compelling human interface and a powerful machine intelligence.
+
+See also [🏛 Behavioral Museum](BEHAVIORAL_MUSEUM.md), [🧬 Model Genome](MODEL_GENOME.md), and [📜 Full Canonical Handoff](FULL_HANDOFF.md).
