@@ -1,3 +1,5 @@
+🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](ru/ANTI_DEGRADATION.md)
+
 # 🛡️ Anti-Degradation Architecture
 
 ## 1. Degradation is multidimensional
@@ -343,3 +345,5 @@ If there is a conflict, the system must be able to return to primary evidence.
 ## 14. Final principle
 
 > **The system should remain coherent even when an individual model becomes confused, changes behavior, is upgraded, or disappears entirely.**
+
+For the full 57-point architecture and historical motivation, see [📜 Full Canonical Handoff](FULL_HANDOFF.md).
