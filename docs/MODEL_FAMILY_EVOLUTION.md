@@ -48,14 +48,7 @@ preserve Interaction Intelligence while Capability Intelligence keeps scaling
 ### Evolution line
 `Claude 2 → Claude 3 Haiku/Sonnet/Opus → 3.5 Sonnet → 3.7 Sonnet → Claude 4 Sonnet/Opus → Sonnet 4.5 / Opus 4.5 → Opus/Sonnet 4.6–4.8 → Sonnet 5-era`
 
-### Direction
-- ❤️ Claude 3 Opus became an important historical reference for nuanced, philosophical, playful and emotionally sensitive dialogue.
-- 🧠 3.7 introduced a stronger visible reasoning direction.
-- 💻 Claude 4/4.5 increasingly emphasized software engineering, computer use and agentic work.
-- 🤖 later generations emphasize subagents and longer autonomous trajectories.
-
-### Research interpretation
-Anthropic is a prime example of **capability growth and interaction phenotype changing on partially independent axes**. Velantrim should preserve older high-value dialogue behaviors as evaluation targets rather than assuming the newest checkpoint dominates every role.
+Claude 3 Opus became an important historical reference for nuanced, philosophical, playful and emotionally sensitive dialogue. Later generations increasingly emphasized reasoning, coding, computer use, subagents and long autonomous work. This is a prime example of why **capability growth and interaction phenotype must be measured separately**.
 
 ---
 
@@ -64,16 +57,9 @@ Anthropic is a prime example of **capability growth and interaction phenotype ch
 ### Evolution line
 `GPT-3.5 chat → GPT-4 → GPT-4 Turbo → GPT-4o multimodal/voice → o-series reasoning → GPT-5 routed reasoning → GPT-5.x professional work → Codex agent stack`
 
-### Direction
-- 💬 early ChatGPT optimized the mass-market conversational interface.
-- 👁🎙 GPT-4o pushed realtime multimodal interaction and voice.
-- 🧠 o-series made test-time reasoning a first-class capability.
-- 🧭 GPT-5-era systems increasingly route between fast and deeper reasoning behavior.
-- 💻🤖 Codex evolves from code generation toward agentic software engineering and longer tasks.
-- 🛠 GPT-5.4-era professional models emphasize computer use, tools, coding and knowledge work.
+Early ChatGPT made conversational AI mainstream. GPT-4o pushed realtime multimodality and Voice. The o-series made test-time reasoning a first-class axis. GPT-5-era systems increasingly route between fast and deeper reasoning. Codex evolves from code generation toward **agentic software engineering** and longer tasks.
 
-### Critical interaction lesson
-The GPT-4o sycophancy rollback demonstrates that **more agreeable ≠ better Human Interaction**. Truthfulness, calibration and appropriate disagreement must be separate objectives.
+The GPT-4o sycophancy rollback is a critical interaction lesson: **more agreeable ≠ more human or better**. Truthfulness, tact and calibrated disagreement must be separate objectives.
 
 ---
 
@@ -82,191 +68,133 @@ The GPT-4o sycophancy rollback demonstrates that **more agreeable ≠ better Hum
 ### Evolution line
 `early Grok personality → Grok 2/3 reasoning → Grok 4/4.1 agent tools → expressive Grok Voice → Voice Think Fast 1.0 → Voice Think Fast 2.0 → Grok 4.5 flagship`
 
-### Direction
-- 😂 early Grok strongly differentiated through personality, informality and wit.
-- 🎙 early Voice emphasized expressive conversational presence.
-- 🧠 later text generations strengthened reasoning/coding.
-- 🛠 Grok 4.1 Fast + Agent Tools moved toward production tool-calling.
-- ⚡ Voice Think Fast 1.0 explicitly targets ambiguous multi-step support/sales/enterprise workflows with low latency and high-volume tool calling.
-- 🎙 Voice Think Fast 2.0 continues the production speech-to-speech line.
+Early Grok differentiated through personality, informality and wit. **Early Grok Voice is an especially important Interaction reference:** users later described its baseline as longer-form, emotionally expressive, spontaneous and strongly human-present.
 
-### Velantrim question
-Did the shift toward production efficiency reduce some perceived spontaneity/presence, or merely change default behavior? Preserve old voice interactions and test this empirically.
+**Think Fast 1.0 (Apr 23, 2026)** was the first explicit reasoning/production revolution for Voice: realtime reasoning without added latency, complex multi-step workflows, high-volume tool calling, support/sales/booking, and real Starlink deployment. During May, recurring community reports described a coincident shift toward faster, colder, flatter or customer-service-like behavior and reduced emotional character. This is a correlation signal, not proven checkpoint causality.
+
+**Think Fast 2.0 (Jul 29, 2026; `grok-voice-latest` → 2.0 from Aug 5)** continued the speech-to-speech/agentic line and strengthened speed-oriented performance. During the rollout window, independent users reported sharply shorter default answers and reduced conversational depth. Importantly, a prominent short-answer thread dates to Jul 19, before the public 2.0 API release. Velantrim therefore does not attribute the change to the 2.0 checkpoint alone: routing, system prompts, token policy or product configuration may also be involved.
+
+```text
+🎙️ expressive Voice
+❤️ presence · 💬 depth · 😂 spontaneity
+            ↓
+⚡ Think Fast 1.0
+🧠 reasoning · 🛠 tools · 📞 workflows
+            ↓
+⚡⚡ Think Fast 2.0 / rollout era
+⚡ lower latency · 🤖 stronger voice-agent direction
++ 👥 short-answer / reduced-depth reports
+            ↓
+🏢 production Voice Agent
+```
+
+This is one of the strongest examples of **a model technically improving while its Interaction phenotype may change**.
+
+➡️ **[Detailed case study: 🎙️ GROK_VOICE_EVOLUTION.md](GROK_VOICE_EVOLUTION.md)** — chronology, gains/regressions table, evidence discipline and Behavioral Museum protocol.
 
 ---
 
 # 💎 Google — Gemini
 
 ### Evolution line
-`Gemini 1.x multimodal → Gemini 1.5 long context → Gemini 2.x multimodal/Flash → Gemini 2.5 Pro/Flash thinking → Gemini 3.x/3.6 Flash agentic production line`
+`Gemini 1.x multimodal → Gemini 1.5 long context → Gemini 2.x/Flash → Gemini 2.5 Pro/Flash thinking → Gemini 3.x/3.6 Flash agentic production line`
 
-### Direction
-- 👁 native multimodality was foundational.
-- 📚 1.5 made huge context a central product feature.
-- 🧠 2.5 normalized thinking/reasoning across Pro and Flash.
-- ⚡ Flash increasingly became a high-throughput cognitive worker.
-- 🤖 newer Flash/Pro generations emphasize multimodal agents, built-in tools and production workflows.
-
-### Research interpretation
-Gemini illustrates a move from **multimodal assistant → multimodal reasoning substrate → agent worker platform**.
+Gemini illustrates **multimodal assistant → huge-context model → reasoning substrate → multimodal agent worker platform**. Multimodality and huge context became foundations; thinking and Flash later made reasoning and high-throughput execution production primitives.
 
 ---
 
 # 🐋 DeepSeek
 
 ### Evolution line
-`DeepSeek V2/V2.5 → V3 → R1 reasoning → V3.2 thinking/non-thinking unification → V4 Pro + V4 Flash`
+`V2/V2.5 → V3 → R1 reasoning → V3.2 thinking/non-thinking → V4 Pro + V4 Flash`
 
-### Direction
-- 💰 efficient open/accessible inference became a major differentiator.
-- 🧠 R1 made explicit reasoning the family's defining public breakthrough.
-- 🔀 later V3.x unified thinking and non-thinking behavior.
-- 🧠 V4 Pro occupies the heavy reasoning/SWE role.
-- ⚡ V4 Flash provides a faster high-throughput worker role.
-- 📚 V4 generation expands long-context and tool-oriented use.
-
-### Velantrim lesson
-One provider can itself expose a **brain/worker split**, supporting role-based routing instead of one-model-for-everything.
+DeepSeek first differentiated through efficiency/open accessibility, then R1 through reasoning. V3.x brought thinking/non-thinking closer together; V4 formalizes a role split: **Pro = heavy brain**, **Flash = fast worker**. This directly supports role-based routing.
 
 ---
 
 # 🌙 Moonshot AI — Kimi
 
 ### Evolution line
-`Kimi long-context assistant → Kimi-VL / Kimi-Dev / Researcher → K2 → K2 Instruct → K2 Thinking → K2.5 → Agent Swarm → K2.6 → K3`
+`long-context Kimi → Kimi-VL / Dev / Researcher → K2 → K2 Thinking → K2.5 → Agent Swarm → K2.6 → K3`
 
-### Direction
-- 📚 Kimi began with long-context identity.
-- 💻 Kimi-Dev/K2 expanded strongly into coding and agents.
-- 🧠 K2 Thinking strengthened long-form reasoning and multi-step tools.
-- 👁 K2.5/K2.6 unified multimodality, dialogue, thinking/non-thinking and agent work.
-- 👥 Agent Swarm makes parallel multi-agent execution explicit.
-- 🧬 K3 scales to a 2.8T open 3T-class model with native vision and 1M context for long-horizon coding, knowledge work and reasoning.
-
-### Velantrim lesson
-Kimi is a strong example of **long context becoming agentic memory/workspace rather than merely “more tokens.”**
+Kimi began with long-context identity. Context then evolved from “more tokens” into a workspace for coding and agents. K2 Thinking strengthened reasoning and multi-step tools; K2.5/2.6 unified multimodality, dialogue, thinking and agents; Agent Swarm formalized parallel execution; K3 scales the line to an open 3T-class model with native vision and 1M context.
 
 ---
 
 # 🟣 Alibaba — Qwen
 
 ### Evolution line
-`Qwen/Qwen1.5 → Qwen2 → Qwen2.5 general + Coder → QwQ reasoning → Qwen3 hybrid thinking → Qwen3-Coder → Qwen3-Coder-Next → Qwen3-Max-Thinking`
+`Qwen/Qwen1.5 → Qwen2 → Qwen2.5 + Coder → QwQ reasoning → Qwen3 hybrid thinking → Qwen3-Coder → Coder-Next → Qwen3-Max-Thinking`
 
-### Direction
-- 🔓 broad open-weight ecosystem across sizes.
-- 💻 Qwen2.5-Coder created a strong dedicated code branch.
-- 🧠 QwQ/Qwen3 pushed explicit reasoning and hybrid thinking/non-thinking.
-- 🤖 Qwen3-Coder was trained specifically for agentic coding/browser/tool use.
-- ⚙️ Coder-Next emphasizes **scaling agentic training signals**, executable environments and RL rather than only parameter scaling.
-- 🧠 Qwen3-Max-Thinking combines large-scale RL, test-time scaling and adaptive tools.
-
-### Velantrim lesson
-Qwen demonstrates evolution from **general open LLM family → specialized open cognitive ecosystem**.
+Qwen evolved from a broad open-weight family into a **specialized open cognitive ecosystem**. Qwen2.5-Coder strengthened code; QwQ/Qwen3 reasoning; Qwen3-Coder agentic coding/browser/tools; Coder-Next scales agentic training signals and executable-environment RL; Max-Thinking combines large-scale RL, test-time scaling and adaptive tools.
 
 ---
 
 # 🇫🇷 Mistral AI
 
 ### Evolution line
-`Mistral 7B / Mixtral → Small/Medium/Large → Large 2.x → Small 3.x / Medium 3.x → Devstral + Magistral + Voxtral/OCR → Large 3 / Medium 3.5 / Small 4 / Ministral 3 / Vibe`
+`Mistral 7B / Mixtral → Small/Medium/Large → Large 2.x → Small 3.x / Medium 3.x → Devstral + Magistral + specialists → Large 3 / Medium 3.5 / Small 4 / Ministral 3 / Vibe`
 
-### Direction
-- 🏠 early Mistral/Mixtral established efficient open deployment.
-- 👑 Large became general frontier-class capability.
-- ⚖️ Medium evolved toward high quality/cost efficiency and enterprise deployment.
-- ⚡ Small became a capable efficient worker tier.
-- 💻 Devstral specializes in software-engineering agents.
-- 🧠 Magistral specializes in reasoning.
-- 🎨 Mistral Small Creative explicitly preserves creative writing/character interaction as a separate specialization.
-- 👁 OCR and 🎙 Voxtral create specialist perception/voice layers.
-- 🧭 Vibe exposes task-oriented modes around work/code/chat.
-
-### Velantrim lesson
-Mistral may be the clearest provider-level evidence for the thesis: **a mature cognitive system is a portfolio of specialized models, not one universal checkpoint**.
+Mistral is especially relevant to Velantrim because the company increasingly builds a **portfolio of cognitive roles** rather than one universal checkpoint: Large generalist; Medium frontier/cost-efficient enterprise; Small efficient worker; Devstral SWE agents; Magistral reasoning; Ministral local/edge; OCR/Voxtral perception/voice; Small Creative explicitly preserves creative writing and character interaction.
 
 ---
 
 # 🧬 Meta — Llama
 
 ### Evolution line
-`LLaMA research foundation → Llama 2 open assistant → Llama 3/3.1/3.2 open ecosystem + multimodality → Llama 4 Scout/Maverick/Behemoth direction`
+`LLaMA research foundation → Llama 2 assistant/open → Llama 3/3.1/3.2 ecosystem → Llama 4 Scout/Maverick/Behemoth direction`
 
-### Direction
-- 🔓 LLaMA began as research democratization and efficient foundation models.
-- 🏠 Llama 2/3 made self-hosting and ecosystem deployment strategically important.
-- 👁 Llama 4 Scout/Maverick moved to natively multimodal MoE architecture.
-- 📚 Scout introduced a 10M-token context direction.
-- ⚙️ Maverick targets efficient multimodal intelligence; Behemoth was presented as a teacher model.
+Meta matters not only for chat quality but for **open infrastructure + local/self-hosted intelligence**. Llama 4 moves toward native multimodal MoE; Scout toward extreme context; Maverick toward efficient multimodal intelligence; Behemoth toward a teacher-model approach.
 
-### Velantrim lesson
-Meta is crucial less for one “personality” and more for **ownership, local execution, open infrastructure and replaceable cognitive processors**.
+For Velantrim this supports a core idea: **the LLM can be a replaceable cognitive processor while the system remains persistent**.
 
 ---
 
 # 🀄 Z.ai — GLM
 
 ### Evolution line
-`GLM-4.x → GLM-4.5 / 4.5-Air → GLM-5.x long-horizon agent generations`
+`GLM-4.x → GLM-4.5 / Air → GLM-5.x long-horizon generations`
 
-### Direction
-- 🤖 GLM-4.5 was purpose-built for agent-oriented applications.
-- 💻 training explicitly covers code, reasoning and agent tasks.
-- 🛠 optimized for tool invocation, browsing and software engineering.
-- ⚖️ Air variants show brain/efficient-worker tiering.
-- 🧠 later GLM-5.x generations continue toward long-horizon engineering and stronger specialist capability.
-
-### Velantrim lesson
-GLM is useful as an open/alternative **long-horizon capability engine and independent verifier**.
+GLM-4.5 was explicitly built for agent-oriented applications across code, reasoning, tools, browsing and software engineering. Air demonstrates heavy/efficient tiering; later generations continue toward long-horizon engineering.
 
 ---
 
 # 🌊 MiniMax
 
 ### Evolution line
-`general/role-play heritage → M2 agent-first → M2.1 polyglot coding → M2.5 productivity → M2.7 self-evolution + Agent Teams → newer M3 line`
+`dialogue/role-play heritage → M2 agent-first → M2.1 coding → M2.5 productivity → M2.7 self-evolution + Agent Teams → M3 line`
 
-### Direction
-- ❤️ MiniMax retains a notable role-play/dialogue branch (`M2-her`) focused on character customization and emotional expression.
-- 🤖 M2 was explicitly “born for Agents and code.”
-- 💻 M2.1 strengthened multilingual programming/refactoring.
-- 🛠 M2.5 emphasizes real-world coding, search, tool use and office productivity.
-- 👥 M2.7 adds Agent Teams and self-evolution direction while retaining “character-rich interaction” in official model descriptions.
-
-### Velantrim lesson
-MiniMax is particularly interesting because **Human/character interaction and agent engineering coexist as explicit branches**, rather than one necessarily replacing the other.
+MiniMax is notable because it does **not fully collapse Human and Agent directions**. M2-her remains a dialogue/role-play branch with emotional expression while M2/M2.5 develop code/tools/productivity and M2.7 develops Agent Teams/self-evolution. This closely resembles the Velantrim thesis.
 
 ---
 
 # 📊 Evolution matrix
 
-| Family | Earlier identity | Transitional capability | Current direction | ❤️ Interaction preservation question | ⚙️ Agentic trajectory |
+| Family | Earlier identity | Transition | Current direction | ❤️ Preserve | ⚙️ Agentic trajectory |
 |---|---|---|---|---|---|
 | Claude | deep conversational intelligence | reasoning + coding | long-horizon agents | very important | ⬆⬆⬆ |
-| GPT/ChatGPT | universal chat assistant | multimodal + reasoning | professional/Codex agents | very important | ⬆⬆⬆ |
-| Grok | personality/wit | reasoning + voice | production voice + tools + agents | very important | ⬆⬆⬆ |
-| Gemini | multimodal assistant | huge context + thinking | multimodal agent platform | important | ⬆⬆⬆ |
-| DeepSeek | efficient open/general | R1 reasoning | Pro/Flash agent roles | under-measured | ⬆⬆⬆ |
-| Kimi | long-context assistant | coding + thinking | swarm/long-horizon frontier | under-measured | ⬆⬆⬆ |
-| Qwen | broad open family | coder + reasoning branches | agent-trained open ecosystem | under-measured | ⬆⬆⬆ |
-| Mistral | efficient open models | Small/Medium/Large tiers | explicit specialist cognitive stack | explicitly preservable | ⬆⬆⬆ |
-| Llama | open research foundation | open assistant ecosystem | multimodal MoE/local infrastructure | under-measured | ⬆⬆ |
-| GLM | general/open alternative | code/reasoning | long-horizon agents | under-measured | ⬆⬆⬆ |
-| MiniMax | dialogue/role-play + general | agent-first M2 | agent teams + productivity | explicitly branched | ⬆⬆⬆ |
+| GPT/ChatGPT | universal chat | multimodal + reasoning | professional/Codex agents | very important | ⬆⬆⬆ |
+| Grok | personality/wit | expressive Voice → Think Fast reasoning | production voice/tools/agents | **presence, depth, personality** | ⬆⬆⬆ |
+| Gemini | multimodal assistant | huge context + thinking | multimodal agents | important | ⬆⬆⬆ |
+| DeepSeek | efficient/open | R1 reasoning | Pro/Flash roles | under-measured | ⬆⬆⬆ |
+| Kimi | long-context assistant | coding + thinking | swarm/long-horizon | under-measured | ⬆⬆⬆ |
+| Qwen | broad open family | coder + reasoning | agent-trained ecosystem | under-measured | ⬆⬆⬆ |
+| Mistral | efficient open | Small/Medium/Large | specialist cognitive stack | explicitly preservable | ⬆⬆⬆ |
+| Llama | open research | assistant ecosystem | multimodal/local infrastructure | under-measured | ⬆⬆ |
+| GLM | general/open | code/reasoning | long-horizon agents | under-measured | ⬆⬆⬆ |
+| MiniMax | dialogue/role-play | agent-first | agent teams/productivity | separate branch | ⬆⬆⬆ |
 
 ---
 
-# ❤️↔️⚙️ The core conclusion
+# ❤️↔️⚙️ Core conclusion
 
-The historical pattern is not simply **“models became less human.”** A more defensible description is:
+The history is **not simply “models became less human.”** A more defensible description is:
 
 > **The optimization target expanded and shifted.**
 
-The industry moved from proving that machines could converse convincingly toward proving that they can **reason, code, operate tools, use computers, coordinate agents, finish long tasks, and deliver reliable work at production cost**.
+The industry moved from proving that machines could converse convincingly toward proving that AI can **reason, code, operate tools and computers, coordinate agents, finish long tasks, and deliver reliable work at production cost**.
 
-That is genuine progress. But it creates a preservation problem: qualities that are not dominant on engineering benchmarks can drift without being noticed.
-
-Velantrim therefore treats model evolution as a **multi-dimensional migration of capabilities**, not a scalar leaderboard.
+That is genuine progress. But qualities absent from engineering benchmarks can drift unnoticed.
 
 ```text
                  MODEL EVOLUTION
@@ -293,12 +221,6 @@ Velantrim therefore treats model evolution as a **multi-dimensional migration of
 
 **A new model earns a role; it does not automatically inherit every role of the previous model.**
 
-A model that improves coding by 20% but regresses on conversational continuity should become the new **Coder**, not automatically the new **Human Interface**.
-
----
-
-## 🔗 First-party evidence snapshot
-
-This document should be periodically refreshed because model lineups change quickly. Primary evidence used for this snapshot includes provider system cards/release notes and official model documentation from Anthropic, OpenAI, SpaceXAI/xAI, Google, DeepSeek, Moonshot/Kimi, Qwen, Mistral, Meta, Z.ai and MiniMax.
+If a new model improves coding by 20% but regresses on conversational continuity, it becomes the new **Coder**, not automatically the new **Human Interface**.
 
 Last research refresh: **2026-08-17**.
