@@ -1,3 +1,5 @@
+🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](ru/HUMAN_INTERACTION_MODEL.md)
+
 # ❤️ Human / Interaction Model
 
 ## Purpose
@@ -319,3 +321,5 @@ Only complex technical tasks would be delegated to frontier cloud models.
 ## Final principle
 
 > **The Interaction Model is not a weaker Technical Model. It is a model specialized for understanding the person, preserving conversational continuity, and translating between human meaning and machine capability.**
+
+For the expanded Russian treatment and the complete architectural chain, see [🇷🇺 Russian version](ru/HUMAN_INTERACTION_MODEL.md) and [📜 Full Canonical Handoff](FULL_HANDOFF.md).
