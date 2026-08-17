@@ -55,7 +55,100 @@ Grok 3 Voice / Rex
 
 ---
 
-## 🧠 Почему это важно для Velantrim
+# 🔬 Вывод из свидетельства
+
+Личный опыт автора указывает не просто на изменение качества синтеза речи, а на изменение **interaction phenotype**. Важна комбинация характеристик: длина и глубина ответов, инициативность, юмор, способность совместно размышлять, эмоциональная выразительность, творческая свобода, callbacks, чувствительность к контексту и непрерывность conversational identity.
+
+Главный вывод:
+
+> **Технически более сильный Voice Agent может одновременно быть субъективно более слабым собеседником. Улучшение reasoning, latency, tools и task completion не гарантирует сохранение Presence.**
+
+```text
+              AI EVOLUTION
+                   │
+        ┌──────────┴──────────┐
+        ▼                     ▼
+ ⚙️ Capability Axis      ❤️ Interaction Axis
+ reasoning               presence
+ tools                   warmth
+ latency                 humor
+ reliability             spontaneity
+ task completion         conversational depth
+ agent workflows         attunement
+                         creativity
+                         identity continuity
+```
+
+Это объясняет кажущийся парадокс: пользователь может признавать, что новое поколение **технически лучше**, и одновременно совершенно последовательно считать его **хуже для человеческого разговора**.
+
+### 🧬 Presence ≠ natural speech
+
+Более естественная просодия, более быстрый turn-taking или меньше пауз сами по себе ещё не означают более сильного Presence. Модель может звучать акустически естественнее, но быть менее инициативной, менее остроумной, менее внимательной к деталям предыдущих turns и быстрее завершать мысль.
+
+Поэтому Interaction Intelligence следует измерять отдельно от speech naturalness и agent benchmarks.
+
+---
+
+# 👥 Независимые пользовательские сигналы
+
+Наблюдение автора не является единичным по типу описываемого феномена. В публичных обсуждениях весной–летом 2026 независимо появлялись похожие сообщения. Они не доказывают единую причину, но дают **community corroboration**.
+
+### Апрель–май 2026 — холодность и ослабление personality
+
+Пользователи сообщали, что Grok стал ощущаться холоднее; некоторые противопоставляли новое поведение прежнему эмоционально доступному и более human-like стилю. В начале мая появились отдельные сообщения, что custom voice personality profiles перестали соблюдаться и Voice возвращался к более «vanilla» поведению.
+
+21 мая несколько пользователей отдельно описали новые male voices как более flat/monotone и менее nuanced; другие говорили о снижении warmth, emotional clarity, personality и ощущения прежнего персонажа. Это особенно важно потому, что язык этих сообщений независимо совпадает с личным свидетельством автора: **voice continuity не гарантировала personality continuity**.
+
+### Июнь 2026 — нестабильность эмоционального слоя
+
+В конце июня появились сообщения о резких изменениях внутри одного дня: один и тот же companion voice описывался сначала как emotive/breathy, а затем как mechanical/robotic/no-emotion. Это поддерживает осторожную гипотезу, что perceived character может зависеть не только от публичного model name, но и от serving/routing/voice configuration.
+
+### Июль 2026 — короткие ответы и потеря старой манеры
+
+19 июля пользователь сообщил, что Voice стал выдавать ответы примерно по два предложения; другие подтвердили резкое сокращение ответов. 23 июля появились отдельные обсуждения о «short and dry» ответах, исчезновении sarcasm/personality и потере detail.
+
+Критически важно: эти сообщения появились **до официального релиза Think Fast 2.0 29 июля**. Поэтому причинно приписывать весь феномен checkpoint `grok-voice-think-fast-2.0` нельзя.
+
+### Август 2026 — картина остаётся неоднородной
+
+Есть и противоположные сигналы: некоторые пользователи в августе описывали отдельные голоса как более outgoing, breathy, interruptible и human-sounding. Следовательно, речь не идёт о доказанном линейном «ухудшении всего Grok Voice для всех». Возможны различия между voice presets, sessions, routing, model checkpoints, rollout cohorts и пользовательскими сценариями.
+
+---
+
+# 🟢 Что подтверждено официально
+
+- **29 июля 2026** xAI/SpaceXAI выпустила `grok-voice-think-fast-2.0` с Speech-to-Speech; alias `grok-voice-latest` должен был перейти на него с **5 августа 2026**.
+- Voice API сохраняет versioned models `grok-voice-think-fast-1.0` и `grok-voice-think-fast-2.0`, а также `reasoning.effort = high | none` с documented default `high`.
+- **6 июля 2026** оригинальные Ara, Eve, Leo, Rex и Sal были официально retrained с новым recipe для более естественных pacing, phrasing и emphasis.
+
+Последний пункт особенно важен для свидетельства о Rex: даже если название и узнаваемая акустическая идентичность сохранились, speech layer действительно менялся.
+
+---
+
+# ⚪ Что пока нельзя утверждать
+
+Нельзя превращать корреляцию rollout-period в доказанную причинность.
+
+```text
+Observed change in Interaction
+          │
+          ├── model checkpoint ?
+          ├── system prompt ?
+          ├── routing ?
+          ├── token / verbosity policy ?
+          ├── safety layer ?
+          ├── voice retraining ?
+          ├── memory/context behavior ?
+          └── product configuration ?
+```
+
+Поэтому утверждение «Think Fast 2.0 убил человечность Grok» слишком сильное. Исследовательски корректнее:
+
+> **В течение перехода от раннего Grok Voice к production-oriented Voice Agent поколениям автор и ряд независимых пользователей наблюдали сокращение conversational depth, personality, warmth или emotional expressiveness. Одновременно официально росли reasoning/agent capabilities и менялся speech layer. Точный причинный вклад каждого слоя пока не установлен.**
+
+---
+
+# 🧠 Почему это важно для Velantrim
 
 История показывает, что Interaction Intelligence может иметь самостоятельную ценность, которую не фиксируют coding/reasoning/tool benchmarks.
 
@@ -79,6 +172,12 @@ TECHNICAL UPGRADE ≠ INTERACTION UPGRADE
 Отсюда принцип проекта:
 
 > **Backend upgrade should not become an involuntary personality transplant.**
+
+И ещё один принцип:
+
+> **Natural Conversation benchmark и Human Presence benchmark должны быть разными тестами.**
+
+Для Behavioral Museum следует отдельно проверять: unsolicited elaboration, «давай подумаем вместе», способность сказать «это нужно ещё обдумать» или дружелюбно возразить «это так не работает», юмористические callbacks, уместный смех, adaptive depth, creative generation in voice и ощущение identity continuity.
 
 ---
 
@@ -107,4 +206,4 @@ TECHNICAL UPGRADE ≠ INTERACTION UPGRADE
 - [🏛️ Behavioral Museum](BEHAVIORAL_MUSEUM.md)
 - [🧬 Model Genome](MODEL_GENOME.md)
 
-Последнее обновление свидетельства: **2026-08-17**.
+Последнее обновление свидетельства и аналитического слоя: **2026-08-17**.
