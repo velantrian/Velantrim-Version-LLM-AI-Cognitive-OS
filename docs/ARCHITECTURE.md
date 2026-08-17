@@ -1,3 +1,5 @@
+🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](ru/ARCHITECTURE.md)
+
 # 🧬 Velantrim Cognitive OS — Architecture
 
 ## 1. Architectural thesis
@@ -234,3 +236,5 @@ A backend upgrade should be an infrastructure change, not a personality transpla
 ## 11. Long-term target
 
 The end state is a **cognitive operating system** in which models are scheduled similarly to computational resources: selected by role, cost, risk, latency and required independence, while the user experiences one coherent persistent intelligence.
+
+> For the complete architectural narrative and all anti-degradation rules, see [📜 Full Canonical Handoff](FULL_HANDOFF.md).
