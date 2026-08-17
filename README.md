@@ -1,13 +1,21 @@
 # 🚀 Velantrim Version LLM (AI) — Cognitive OS 💫
 
-> **LLM = replaceable cognitive processor.  
-> Cognitive OS = persistent intelligence.**
+<div align="center">
 
-Velantrim Version LLM (AI) explores a modular AI architecture that separates **❤️ human interaction intelligence** from **🧠 technical capability intelligence**, then connects them through **🧭 cognitive routing**, **🔍 independent verification**, and **💾 persistent memory**.
+🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](README.ru.md)
 
-The project is motivated by a simple observation: modern AI models do not evolve along one axis. A new generation can become much stronger at coding, reasoning, tool use and long-horizon agency while also changing its conversational character, creativity, warmth, spontaneity or explanatory style. That is not necessarily a regression — often it is a shift in optimization goals.
+**❤️ Human Interaction · 🧭 Cognitive Routing · 🧠 Capability Models · 🔍 Assurance · 💾 Persistent Memory**
 
-Velantrim Cognitive OS is designed so that progress in one dimension does not have to erase valuable qualities in another.
+</div>
+
+> **LLM = replaceable cognitive processor.**  
+> **Cognitive OS = persistent intelligence.**
+
+Velantrim Version LLM (AI) explores a modular cognitive architecture in which **human-facing interaction intelligence** and **machine-facing technical intelligence** do not have to live inside one universal checkpoint. They cooperate through explicit routing, structured memory, independent verification and semantic handoff protocols.
+
+The project is motivated by a simple observation: **model progress is multidimensional**. A new generation can become dramatically stronger at reasoning, coding, tool use, multimodality and long-horizon agency while also changing its conversational character, creative voice, humor, spontaneity, emotional calibration or explanation style. That change is not automatically a regression; often it reflects a different optimization target.
+
+Velantrim Cognitive OS is designed so progress in one dimension does not have to erase valuable qualities in another.
 
 ---
 
@@ -15,45 +23,55 @@ Velantrim Cognitive OS is designed so that progress in one dimension does not ha
 
 Instead of forcing one universal model to be simultaneously the best:
 
-- ❤️ human companion,
-- 💬 conversational partner,
-- ✍️ writer,
-- 😂 humorist,
-- 🎓 teacher,
-- 🧠 reasoner,
-- 💻 coding agent,
-- 🔎 researcher,
-- 🤖 autonomous operator,
-- 🛠 tool user,
-- 🔍 verifier,
+- ❤️ human companion and conversational partner;
+- 🎭 socially calibrated communicator;
+- 😂 humorist and contextual conversationalist;
+- ✍️ writer, editor and creative collaborator;
+- 🎓 adaptive teacher and explainer;
+- 🧠 strategic reasoner;
+- 💻 coding agent;
+- 🔎 researcher;
+- 🤖 autonomous operator;
+- 🛠 tool/computer user;
+- 🔍 verifier;
+- 💾 memory keeper;
 
-Velantrim separates these responsibilities into cognitive layers.
+Velantrim separates these responsibilities into cooperating cognitive planes.
 
 ```text
-                        👤 USER
-                           │
-                           ▼
-                ❤️ Interaction Layer
-                           │
-                    intent / context
-                           ▼
-                🧭 Cognitive Control
-                           │
-          ┌────────────────┼────────────────┐
-          ▼                ▼                ▼
-      🧠 Reasoner       💻 Coder       🔎 Researcher
-          │                │                │
-          └────────────────┼────────────────┘
-                           ▼
-                    🔍 Assurance
-                           │
-                           ▼
-                ❤️ Human Interpretation
-                           │
-                           ▼
-                        👤 USER
+                         👤 USER
+                            │
+                            ▼
+                 ❤️ Interaction Plane
+                            │
+                 intent · context · meaning
+                            │
+                            ▼
+                 🧭 Cognitive Control
+                            │
+           ┌────────────────┼────────────────┐
+           ▼                ▼                ▼
+       🧠 Reasoner       💻 Coder       🔎 Researcher
+           │                │                │
+           ├────────────────┼────────────────┤
+           ▼                ▼                ▼
+       👁 Vision         🛠 Tools        🧬 Specialist
+           │
+           └────────────────┬────────────────┘
+                            ▼
+                     🔍 Assurance
+                            │
+                            ▼
+                 ❤️ Human Interpretation
+                            │
+                            ▼
+                         👤 USER
 
-             💾 Persistent Memory Plane
+               ═════════════════════════
+                   💾 Memory Plane
+               user · task · episodes
+               facts · provenance · state
+               ═════════════════════════
 ```
 
 ---
@@ -62,39 +80,40 @@ Velantrim separates these responsibilities into cognitive layers.
 
 | Plane | Main question | Responsibility |
 |---|---|---|
-| ❤️ Interaction | What does the person mean, and how should this be communicated? | Intent, dialogue, explanation, humor, creativity, adaptation |
-| 🧭 Cognitive Control | Who should think, and how? | Model routing, reasoning effort, tools, context policy, latency, privacy, cost |
-| 🧠 Capability | How do we solve the task? | Reasoning, coding, research, vision, agents, specialists |
-| 🔍 Assurance | Can we trust the result? | Tests, evidence, adversarial review, cross-model verification |
-| 💾 Memory | What must persist beyond one model call? | User model, task state, provenance, hot/warm/cold memory |
+| ❤️ **Interaction** | What does the person mean, and how should this be communicated? | Intent, dialogue, explanation, humor, creativity, adaptation, semantic handoff |
+| 🧭 **Cognitive Control** | Who should think, and how? | Model routing, reasoning effort, serving mode, tools, context policy, latency, privacy, cost |
+| 🧠 **Capability** | How do we solve the task? | Reasoning, coding, research, vision, documents, agents, specialists |
+| 🔍 **Assurance** | Can we trust the result? | Tests, evidence, deterministic checks, adversarial review, cross-model verification |
+| 💾 **Memory** | What must persist beyond one model call? | User model, task state, provenance, Hot/Warm/Cold memory, verified facts |
 
 ---
 
 ## ❤️ Interaction Model
 
-The Interaction Model is not a smaller technical model with a prompt saying “be friendly”. Its specialization is **the human side of intelligence**:
+The Interaction Model is **not** a smaller technical model with a system prompt saying “be friendly”. Its specialization is the human-facing side of intelligence:
 
 - understanding intent and conversational pragmatics;
-- recognizing when a user wants an answer vs. when they are thinking aloud;
+- distinguishing a factual question from thinking aloud;
 - emotional calibration without turning every emotion into therapy;
 - humor, irony, callbacks and timing;
-- adaptive explanation for different levels of expertise;
+- adapting explanation depth to the person;
 - intellectual partnership and constructive disagreement;
 - writing, storytelling, editing and metaphor;
-- semantic translation between human intent and machine-oriented specifications.
+- translating human intent into machine-oriented specifications;
+- translating technical output back into useful human meaning.
 
-Its objective should not be “make the user happy”. That produces sycophancy.
-
-A better target is:
+Its objective must not be “make the user happy”, because that can reward sycophancy.
 
 ```text
-truthfulness
+Good Human Interaction =
+  truthfulness
 + intent understanding
 + usefulness
 + tact
 + explanatory quality
 + social calibration
 + intellectual honesty
++ appropriate disagreement
 - sycophancy
 - manipulation
 - false intimacy
@@ -107,18 +126,14 @@ truthfulness
 
 Capability models are optimized for machine-facing work:
 
-- complex reasoning;
-- mathematics;
+- complex reasoning and mathematics;
 - coding and debugging;
-- research;
-- document analysis;
-- tool use;
-- computer use;
-- planning;
-- long-horizon agents;
-- structured outputs;
-- APIs and databases;
-- simulation and verification-oriented tasks.
+- research and document analysis;
+- tool and computer use;
+- planning and structured outputs;
+- long-horizon agent workflows;
+- APIs, databases and simulations;
+- specialist or verification-oriented work.
 
 They may be larger, slower, more expensive and less conversational. That is acceptable: they are **compute engines**, not necessarily the identity of the system.
 
@@ -131,10 +146,11 @@ The router should choose more than a model name.
 ```text
 TASK
  │
+ ├─ model role?
  ├─ model family?
  ├─ reasoning effort?
  ├─ serving mode?
- ├─ agent strategy?
+ ├─ reasoning / agent strategy?
  ├─ context strategy?
  ├─ tools?
  ├─ verifier?
@@ -142,7 +158,7 @@ TASK
  └─ cost / latency budget?
 ```
 
-Reasoning effort should be dynamic:
+A useful default effort ladder is:
 
 ```text
 trivial  → Low
@@ -152,19 +168,13 @@ critical → XHigh
 extreme  → Max
 ```
 
-If High fails repeatedly, the answer is not always “use Max”. The system may instead:
-
-- switch model family;
-- start with a fresh context;
-- change reasoning strategy;
-- decompose the task differently;
-- invoke an independent verifier.
+But repeated failure should not automatically mean “more tokens”. The system may instead switch model family, start with fresh context, change reasoning strategy, decompose the task differently or invoke an independent verifier.
 
 ---
 
 ## 🔍 Assurance instead of self-trust
 
-A model that creates a solution should not be the only judge of its own correctness.
+A model that creates a solution should not be the only judge of its correctness.
 
 ```text
 Model A creates
@@ -176,16 +186,7 @@ deterministic tests
 Model C integrates
 ```
 
-The Assurance Plane may include:
-
-- unit and integration tests;
-- compilers;
-- static analysis;
-- theorem provers;
-- factual evidence and citations;
-- deterministic constraints;
-- independent models from another family/vendor;
-- adversarial review.
+Assurance can include compilers, tests, static analysis, formal verification, source-backed factual checks, database constraints, policy checks and independent cross-family reviewers.
 
 > ❤️ Interaction asks: **Does this answer fit the human?**  
 > 🔍 Assurance asks: **Is this answer trustworthy?**
@@ -194,9 +195,7 @@ The Assurance Plane may include:
 
 ## 💾 Persistent memory and anti-degradation
 
-Long context is not the same thing as durable memory.
-
-Velantrim separates:
+Long context is not durable memory.
 
 ```text
 🔥 HOT  → active working context
@@ -214,15 +213,14 @@ Original Objective
 + Needed Evidence
 ```
 
-not the entire history of everything ever said.
-
-Important task invariants must live outside transient model context:
+Important task invariants must exist outside transient model context:
 
 ```yaml
 task_invariants:
   original_goal: ...
   hard_constraints: [...]
   user_non_goals: [...]
+  acceptance_criteria: [...]
   safety_boundaries: [...]
 ```
 
@@ -240,105 +238,92 @@ This helps resist:
 
 ## 🕰️ Model evolution: from conversational experiments to agentic systems
 
-One of the research questions behind this repository is how AI systems changed from early “wow, it talks” products into production-grade cognitive workers.
-
-A simplified trajectory:
+A major research question is how AI systems evolved from early “wow, it talks” products into production-grade cognitive workers.
 
 ```text
-✨ conversational presence
+✨ conversational novelty
         ↓
-👁 multimodality / voice / long context
+💬 character / writing / chat
+        ↓
+👁 voice + multimodality + long context
         ↓
 🧠 explicit reasoning
         ↓
-💻 coding + tools
+💻 coding + tool use
         ↓
 🤖 long-horizon agents
         ↓
 🏢 production / enterprise automation
 ```
 
-This is not automatically “better” or “worse”. It is a change in optimization targets.
+This is not automatically “better” or “worse”. It is often a change in optimization target.
 
-The repository tracks both:
+Velantrim therefore tracks at least two independent families of qualities:
 
-- ❤️ **Human Presence** — conversation, personality, humor, creativity, emotional calibration, explanation;
-- ⚙️ **Engineering / Agentic Power** — reasoning, coding, tools, autonomy, reliability, long-horizon execution.
+- ❤️ **Human Presence** — conversation, personality, humor, creativity, emotional calibration, explanation, intellectual companionship;
+- ⚙️ **Engineering / Agentic Power** — reasoning, coding, tools, reliability, autonomy, long-horizon execution, cost/task.
 
-A model can improve dramatically on the second axis while changing — positively or negatively — on the first.
-
-Families discussed in this research include:
-
-- Anthropic Claude (Claude 3 Opus, Sonnet 4.5, Opus 4.5 and later agentic generations);
-- OpenAI GPT / GPT-4o / GPT-5.x / Codex;
-- xAI Grok / Grok Voice / Grok 4.x;
-- Google Gemini;
-- DeepSeek Pro / Flash;
-- Moonshot Kimi / Kimi Code;
-- Alibaba Qwen / Qwen Coder;
-- Mistral Large / Medium / Small / Ministral / Devstral / Codestral / Vibe;
-- Meta Llama and agent-oriented successors;
-- GLM;
-- MiniMax;
-- emerging open and proprietary agentic models.
-
-See [`docs/MODEL_EVOLUTION.md`](docs/MODEL_EVOLUTION.md).
+Families discussed in this research include Anthropic Claude, OpenAI GPT/Codex, xAI Grok/Grok Voice, Google Gemini, DeepSeek, Kimi, Qwen, Mistral, Meta/Llama and newer agent-oriented families, GLM, MiniMax and emerging open/proprietary systems.
 
 ---
 
 ## 🏛️ Behavioral Museum
 
-A future Velantrim system should not discard successful behavioral qualities simply because a model is superseded.
+A future system should not discard successful behavioral traits just because a checkpoint is superseded.
 
-The **Behavioral Museum** concept preserves:
+The **Behavioral Museum** preserves reproducible examples of:
 
-- 💬 representative dialogues;
-- 😂 humor and sarcasm cases;
-- ❤️ emotional calibration examples;
-- 🧙 deep intellectual conversations;
-- 🎓 explanation examples;
-- ✍️ creative writing samples;
-- 🧪 behavior evaluations;
+- 💬 representative dialogue;
+- 😂 humor, irony and callbacks;
+- ❤️ emotional calibration;
+- 🧙 deep intellectual conversation;
+- 🎓 explanations;
+- ✍️ creative writing;
+- 🧪 behavioral evaluations;
 - ⚙️ model/system configuration;
-- 📊 human preference comparisons.
+- 📊 human-preference comparisons.
 
-The goal is not to run old models forever. The goal is to preserve measurable traits so that useful behavior can be reproduced or distilled into future Interaction Models.
+The goal is not to run old models forever. The goal is to preserve measurable traits so they can be reproduced, distilled or used as regression tests.
 
 ---
 
 ## 🧬 Model Genome
 
-Velantrim should evaluate models as multidimensional profiles rather than one leaderboard number.
+Models should be evaluated as multidimensional profiles rather than one leaderboard score.
 
 ```yaml
 model_profile:
-  interaction_presence: ...
-  conversational_continuity: ...
-  humor_and_playfulness: ...
-  emotional_calibration: ...
-  creativity_and_writing: ...
+  human:
+    interaction_presence: ...
+    conversational_continuity: ...
+    humor_and_playfulness: ...
+    emotional_calibration: ...
+    creativity_and_writing: ...
+    explanation_quality: ...
 
-  reasoning: ...
-  coding: ...
-  agentic_long_horizon: ...
-  tool_use: ...
-  context_effectiveness: ...
+  technical:
+    reasoning: ...
+    coding: ...
+    agentic_long_horizon: ...
+    tool_use: ...
+    verification: ...
+    context_effectiveness: ...
 
-  latency: ...
-  cost: ...
-  privacy: ...
+  operational:
+    latency: ...
+    cost_per_verified_task: ...
+    privacy: ...
 
   evidence:
     official: ...
     independent: ...
     community: ...
+    hypothesis: ...
 ```
 
-A new model should not automatically replace an older one because it scores higher on a single benchmark. It should be admitted **by role**.
+A new model should be admitted **by role**, not globally.
 
-Example:
-
-> +15% coding, −20% Interaction Presence → admit as new **Coder**, not automatically as the new **Human Interface**.
+> Example: `+15% coding, −20% Interaction Presence` → ✅ new **Coder**, ❌ not automatically the new **Human Interface**.
 
 ---
 
@@ -374,19 +359,22 @@ This can reduce latency, preserve interaction continuity, improve privacy and ma
 
 ---
 
-## 📚 Repository map
+## 📚 Documentation / Документация
 
-```text
-.
-├── README.md
-└── docs/
-    ├── ARCHITECTURE.md
-    ├── MODEL_EVOLUTION.md
-    ├── ANTI_DEGRADATION.md
-    ├── HUMAN_INTERACTION_MODEL.md
-    ├── MODEL_ROUTING.md
-    └── RESEARCH_ROADMAP.md
-```
+Every canonical document is maintained in both languages with a language switch at the top.
+
+| Topic | 🇬🇧 English | 🇷🇺 Русский |
+|---|---|---|
+| 🧬 Architecture | [ARCHITECTURE.md](docs/ARCHITECTURE.md) | [ARCHITECTURE.md](docs/ru/ARCHITECTURE.md) |
+| 📜 Full canonical handoff | [FULL_HANDOFF.md](docs/FULL_HANDOFF.md) | [FULL_HANDOFF.md](docs/ru/FULL_HANDOFF.md) |
+| 🕰️ Model evolution | [MODEL_EVOLUTION.md](docs/MODEL_EVOLUTION.md) | [MODEL_EVOLUTION.md](docs/ru/MODEL_EVOLUTION.md) |
+| 🛡️ Anti-degradation | [ANTI_DEGRADATION.md](docs/ANTI_DEGRADATION.md) | [ANTI_DEGRADATION.md](docs/ru/ANTI_DEGRADATION.md) |
+| ❤️ Human / Interaction Model | [HUMAN_INTERACTION_MODEL.md](docs/HUMAN_INTERACTION_MODEL.md) | [HUMAN_INTERACTION_MODEL.md](docs/ru/HUMAN_INTERACTION_MODEL.md) |
+| 🧭 Cognitive routing | [MODEL_ROUTING.md](docs/MODEL_ROUTING.md) | [MODEL_ROUTING.md](docs/ru/MODEL_ROUTING.md) |
+| 🏛️ Behavioral Museum | [BEHAVIORAL_MUSEUM.md](docs/BEHAVIORAL_MUSEUM.md) | [BEHAVIORAL_MUSEUM.md](docs/ru/BEHAVIORAL_MUSEUM.md) |
+| 🧬 Model Genome | [MODEL_GENOME.md](docs/MODEL_GENOME.md) | [MODEL_GENOME.md](docs/ru/MODEL_GENOME.md) |
+| 🧪 Evaluation framework | [EVALUATION_FRAMEWORK.md](docs/EVALUATION_FRAMEWORK.md) | [EVALUATION_FRAMEWORK.md](docs/ru/EVALUATION_FRAMEWORK.md) |
+| 🗺️ Research roadmap | [RESEARCH_ROADMAP.md](docs/RESEARCH_ROADMAP.md) | [RESEARCH_ROADMAP.md](docs/ru/RESEARCH_ROADMAP.md) |
 
 ---
 
@@ -399,19 +387,19 @@ Core research questions include:
 1. How should Human Presence be measured independently of technical intelligence?
 2. Which traits from earlier model generations are worth preserving?
 3. How can Interaction Models delegate without becoming lossy semantic codecs?
-4. How should model routing combine quality, effort, cost, privacy and latency?
+4. How should routing combine quality, reasoning effort, cost, privacy and latency?
 5. How independent must a verifier be from the generating model?
 6. How should memory distinguish facts, beliefs, preferences and uncertain hypotheses?
-7. How can the system detect degradation during long-running agent trajectories?
+7. How can the system detect degradation during long-running trajectories?
 8. Can Interaction and Capability models be jointly trained through outcome-level rewards?
+9. How should historical model behavior be preserved as reproducible evidence rather than nostalgia?
+10. How can a stable human-facing identity survive repeated backend replacement?
 
 ---
 
 ## 🌟 Design principle
 
 > **Do not fight model degradation by searching for an eternal perfect model. Build the system so that a model may degrade, fail, age or be replaced — while the continuity of intelligence, memory, human interaction and control survives.**
-
----
 
 ### 🚀 Velantrim
 
