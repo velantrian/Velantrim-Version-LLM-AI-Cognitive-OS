@@ -1,3 +1,5 @@
+🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](ru/MODEL_ROUTING.md)
+
 # 🧭 Cognitive Routing
 
 ## Goal
@@ -220,3 +222,5 @@ reward =
 ```
 
 The long-term objective is **cognitive scheduling**, not static model selection.
+
+For expanded routing policies, topology choices and privacy/context routing, see the [🇷🇺 Russian version](ru/MODEL_ROUTING.md) and the [📜 Full Canonical Handoff](FULL_HANDOFF.md).
