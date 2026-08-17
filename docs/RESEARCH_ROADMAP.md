@@ -1,3 +1,5 @@
+🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](ru/RESEARCH_ROADMAP.md)
+
 # 🗺️ Research Roadmap
 
 ## Phase 0 — Preserve the concept
@@ -8,6 +10,8 @@
 - [x] Define anti-degradation principles
 - [x] Define model-evolution research framing
 - [x] Define cognitive routing concept
+- [x] Add bilingual documentation navigation
+- [x] Preserve the full canonical handoff
 
 ---
 
@@ -238,3 +242,5 @@ This repository should prefer:
 - explicit uncertainty over fabricated certainty;
 - modular replacement over vendor lock-in;
 - preserved human interaction quality alongside technical progress.
+
+The Russian roadmap contains the expanded phase structure; the canonical architecture is preserved in [📜 FULL_HANDOFF.md](FULL_HANDOFF.md).
