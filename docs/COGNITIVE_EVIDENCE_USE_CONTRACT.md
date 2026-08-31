@@ -11,7 +11,7 @@ Date: 2026-08-31
 
 ## Purpose
 
-This contract defines a substrate-neutral distinction for Velantrim Cognitive OS: information being found, represented, serialized or transmitted does not by itself establish that the active reasoner actually used that information, or that it supported the final answer.
+This contract defines a substrate-neutral distinction for Velantrim Cognitive OS: information being found, represented, serialized or transmitted does not by itself establish that the active reasoner actually used that information, that it supported the final answer, or that it is permitted to authorize a downstream decision.
 
 The contract belongs at the Cognitive OS level because it constrains how context, memory, reasoning and assurance may describe their relationship without requiring any particular model, provider, retriever or memory backend.
 
@@ -23,6 +23,7 @@ RETRIEVED
 ≠ TRANSMITTED
 ≠ USED
 ≠ ANSWER-SUPPORTING
+≠ DECISION-AUTHORIZING
 ```
 
 Equivalent guardrails:
@@ -32,6 +33,7 @@ CONTEXT PRESENT ≠ CONTEXT USED
 RETRIEVED EVIDENCE ≠ EVIDENCE USED
 AVAILABLE EVIDENCE ≠ REASONING SUPPORT
 TRACE OF AVAILABLE EVIDENCE ≠ TRACE OF ACTUAL SUPPORT
+ANSWER SUPPORT ≠ DECISION AUTHORITY
 ```
 
 ## Operational meaning
@@ -44,9 +46,11 @@ A system may know that an item was transmitted without knowing that the model us
 
 A system may know that an item was used without knowing that it materially supported the final conclusion.
 
-Therefore later stages must not silently promote evidence from an earlier stage into a stronger attribution status.
+A system may know that an item supported an answer without that item being permitted to control a decision or action. Decision authority remains an owner-controlled boundary.
 
-## Minimum provenance vocabulary
+Therefore later stages must not silently promote evidence from an earlier stage into a stronger attribution or authority status.
+
+## Minimum stage vocabulary
 
 When an implementation chooses to expose attribution state, the following conceptual sets are useful:
 
@@ -54,7 +58,8 @@ When an implementation chooses to expose attribution state, the following concep
 R = retrieved items
 S = serialized items
 T = transmitted items
-U = demonstrably used / answer-supporting items
+U = demonstrably used items
+A = demonstrably answer-supporting items
 ```
 
 The architectural rule is not that every implementation must materialize these exact sets. The rule is:
@@ -63,7 +68,10 @@ The architectural rule is not that every implementation must materialize these e
 R MUST NOT BE ASSUMED TO EQUAL S
 S MUST NOT BE ASSUMED TO EQUAL T
 T MUST NOT BE ASSUMED TO EQUAL U
+U MUST NOT BE ASSUMED TO EQUAL A
 ```
+
+Decision authorization is deliberately not represented as another membership set here. It is a separate policy and authority gate owned by the relevant domain.
 
 If a stage is not measured, its status should remain unknown / not established rather than being inferred from an earlier stage.
 
@@ -83,7 +91,7 @@ A model may receive evidence and still ignore, misunderstand or override it.
 
 ### 🔍 Assurance Plane
 
-Assurance may verify whether attribution claims are justified. It must not treat mere retrieval or prompt presence as proof of semantic support.
+Assurance may verify whether attribution claims are justified. It must not treat mere retrieval or prompt presence as proof of semantic support, and it must not turn answer support into decision authority.
 
 ## Trace semantics
 
@@ -124,9 +132,10 @@ This document does not claim that:
 - model self-report proves what evidence was used;
 - every answer needs per-fact causal attribution;
 - every system must persist full chain-of-thought;
-- a new attribution service or memory subsystem is required.
+- a new attribution service or memory subsystem is required;
+- answer-supporting evidence automatically has decision authority.
 
-Those are implementation or research questions.
+Those are implementation, research or owner-policy questions.
 
 ## Research boundary
 
@@ -135,8 +144,10 @@ The architectural distinction is considered stable enough to keep as a Cognitive
 The unresolved research problem is narrower:
 
 ```text
-HOW DO WE RELIABLY ESTABLISH U?
+HOW DO WE RELIABLY ESTABLISH U AND A?
 ```
+
+That is: how do we establish actual semantic use, and separately how do we establish that an item materially supported the answer?
 
 Possible research methods include bounded counterfactual removal, perturbation, discriminating fixtures and task-specific attribution checks. None is promoted here as a universal mechanism.
 
@@ -154,6 +165,9 @@ CLAIM TRANSMISSION.
 
 DO NOT CLAIM SEMANTIC USE OR ANSWER SUPPORT
 WITHOUT ADDITIONAL EVIDENCE.
+
+DO NOT CLAIM DECISION AUTHORITY
+FROM ANSWER SUPPORT ALONE.
 ```
 
 This is an epistemic reporting contract, not a new runtime authority.
