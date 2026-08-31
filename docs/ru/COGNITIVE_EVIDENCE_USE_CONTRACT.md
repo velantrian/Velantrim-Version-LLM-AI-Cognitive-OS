@@ -11,7 +11,7 @@ Implementation mandate: NONE
 
 ## Зачем нужен этот контракт
 
-Этот контракт фиксирует substrate-neutral различие для Velantrim Cognitive OS: тот факт, что информация была найдена, представлена, сериализована или передана модели, сам по себе не доказывает, что активный reasoner действительно её использовал или что именно она поддержала итоговый ответ.
+Этот контракт фиксирует substrate-neutral различие для Velantrim Cognitive OS: тот факт, что информация была найдена, представлена, сериализована или передана модели, сам по себе не доказывает, что активный reasoner действительно её использовал, что именно она поддержала итоговый ответ или что ей разрешено авторизовать downstream-решение.
 
 Контракт относится к уровню Cognitive OS, потому что задаёт правило для связи context, memory, reasoning и assurance, не навязывая конкретную модель, provider, retriever или memory backend.
 
@@ -23,6 +23,7 @@ RETRIEVED
 ≠ TRANSMITTED
 ≠ USED
 ≠ ANSWER-SUPPORTING
+≠ DECISION-AUTHORIZING
 ```
 
 Эквивалентные guardrails:
@@ -32,6 +33,7 @@ CONTEXT PRESENT ≠ CONTEXT USED
 RETRIEVED EVIDENCE ≠ EVIDENCE USED
 AVAILABLE EVIDENCE ≠ REASONING SUPPORT
 TRACE OF AVAILABLE EVIDENCE ≠ TRACE OF ACTUAL SUPPORT
+ANSWER SUPPORT ≠ DECISION AUTHORITY
 ```
 
 ## Практический смысл
@@ -44,9 +46,11 @@ TRACE OF AVAILABLE EVIDENCE ≠ TRACE OF ACTUAL SUPPORT
 
 Система может знать, что объект был использован, но не знать, был ли он материально значим для итогового вывода.
 
-Поэтому следующий этап не должен молча повышать статус evidence только потому, что предыдущий этап был пройден.
+Система может знать, что объект действительно поддержал ответ, но из этого ещё не следует право объекта управлять решением или действием. Decision authority остаётся owner-controlled границей.
 
-## Минимальная vocabulary для provenance
+Поэтому следующий этап не должен молча повышать attribution- или authority-статус только потому, что предыдущий этап был пройден.
+
+## Минимальная stage vocabulary
 
 Если implementation хочет показывать attribution state, полезно различать:
 
@@ -54,16 +58,20 @@ TRACE OF AVAILABLE EVIDENCE ≠ TRACE OF ACTUAL SUPPORT
 R = retrieved items
 S = serialized items
 T = transmitted items
-U = demonstrably used / answer-supporting items
+U = demonstrably used items
+A = demonstrably answer-supporting items
 ```
 
-Архитектурное требование не в том, что каждая реализация обязана хранить именно эти четыре множества. Требование в другом:
+Архитектурное требование не в том, что каждая реализация обязана хранить именно эти множества. Требование в другом:
 
 ```text
 R MUST NOT BE ASSUMED TO EQUAL S
 S MUST NOT BE ASSUMED TO EQUAL T
 T MUST NOT BE ASSUMED TO EQUAL U
+U MUST NOT BE ASSUMED TO EQUAL A
 ```
+
+Decision authorization намеренно не представлена здесь ещё одним membership set. Это отдельный policy/authority gate owning domain.
 
 Если стадия не измерялась, её статус должен оставаться unknown / not established, а не выводиться автоматически из предыдущей стадии.
 
@@ -83,7 +91,7 @@ Context assembly и routing могут решить, что следует пе�
 
 ### 🔍 Assurance Plane
 
-Assurance должен проверять, оправдано ли attribution-утверждение, и не считать retrieval или наличие в prompt доказательством semantic support.
+Assurance должен проверять, оправдано ли attribution-утверждение, не считать retrieval или наличие в prompt доказательством semantic support и не превращать answer support в decision authority.
 
 ## Семантика trace
 
@@ -124,19 +132,22 @@ Truncation marker, warning или receipt могут сделать потерю
 - self-report модели доказывает, что именно она использовала;
 - каждому ответу нужен causal attribution по каждому факту;
 - нужно сохранять полный chain-of-thought;
-- требуется новый attribution service или memory subsystem.
+- требуется новый attribution service или memory subsystem;
+- answer-supporting evidence автоматически получает decision authority.
 
-Это implementation и research questions.
+Это implementation, research или owner-policy questions.
 
 ## Research boundary
 
 Само различие достаточно зрелое, чтобы жить как Cognitive OS invariant.
 
-Оставшаяся research-проблема уже уже:
+Оставшаяся research-проблема уже и точнее:
 
 ```text
-HOW DO WE RELIABLY ESTABLISH U?
+HOW DO WE RELIABLY ESTABLISH U AND A?
 ```
+
+То есть отдельно: как установить реальное semantic use и как установить, что элемент материально поддержал итоговый ответ.
 
 Кандидаты для исследования: bounded counterfactual removal, perturbation, discriminating fixtures и task-specific attribution checks. Ни один из них здесь не объявляется универсальным механизмом.
 
@@ -154,6 +165,9 @@ CLAIM TRANSMISSION.
 
 DO NOT CLAIM SEMANTIC USE OR ANSWER SUPPORT
 WITHOUT ADDITIONAL EVIDENCE.
+
+DO NOT CLAIM DECISION AUTHORITY
+FROM ANSWER SUPPORT ALONE.
 ```
 
 Это epistemic reporting contract, а не новый runtime authority.
