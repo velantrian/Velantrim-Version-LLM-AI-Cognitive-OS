@@ -77,7 +77,8 @@ A system may record these stages explicitly when useful:
 R = retrieved item identifiers
 S = serialized item identifiers
 T = transmitted item identifiers
-U = demonstrably used / answer-supporting item identifiers
+U = demonstrably used item identifiers
+A = demonstrably answer-supporting item identifiers
 ```
 
 The contract does not require every implementation to materialize these exact sets. It requires only that the system not falsely treat them as equivalent.
@@ -86,6 +87,7 @@ The contract does not require every implementation to materialize these exact se
 R != necessarily S
 S != necessarily T
 T != necessarily U
+U != necessarily A
 ```
 
 ## Relationship to existing planes
@@ -109,7 +111,7 @@ The distinction itself is stable enough to be an architectural invariant.
 The unresolved research problem is narrower:
 
 ```text
-HOW DO WE RELIABLY ESTABLISH U?
+HOW DO WE RELIABLY ESTABLISH U AND A?
 ```
 
 Candidate methods include bounded counterfactual removal, perturbation, discriminating fixtures and task-specific attribution checks. None is promoted here as a universal mechanism.

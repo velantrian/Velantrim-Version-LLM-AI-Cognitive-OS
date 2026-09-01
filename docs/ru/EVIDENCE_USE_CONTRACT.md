@@ -77,15 +77,17 @@ ANSWER SUPPORT ≠ DECISION AUTHORITY
 R = retrieved item identifiers
 S = serialized item identifiers
 T = transmitted item identifiers
-U = demonstrably used / answer-supporting item identifiers
+U = demonstrably used item identifiers
+A = demonstrably answer-supporting item identifiers
 ```
 
-Контракт не требует, чтобы каждая реализация физически хранила именно эти четыре множества. Он требует не считать их автоматически равными.
+Контракт не требует, чтобы каждая реализация физически хранила именно эти пять множеств. Он требует не считать их автоматически равными.
 
 ```text
 R != necessarily S
 S != necessarily T
 T != necessarily U
+U != necessarily A
 ```
 
 ## Связь с существующими planes
@@ -106,10 +108,10 @@ Assurance может проверять, сохранилось ли важно�
 
 Само различие достаточно зрелое, чтобы быть architectural invariant.
 
-Оставшаяся research-проблема уже уже:
+Оставшаяся research-проблема уже:
 
 ```text
-HOW DO WE RELIABLY ESTABLISH U?
+HOW DO WE RELIABLY ESTABLISH U AND A?
 ```
 
 Кандидаты: bounded counterfactual removal, perturbation, discriminating fixtures и task-specific attribution checks. Ни один из них здесь не объявляется универсальным механизмом.
