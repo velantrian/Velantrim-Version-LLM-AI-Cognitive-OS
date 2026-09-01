@@ -39,7 +39,7 @@ ONLY THEN: IMPLEMENTATION OPTIONS
 
 - LLM или другой cognitive processor;
 - SQLite, PostgreSQL, файлы или другой durable store;
-- property graph, RDF, relational representation или иной relational substrate;
+- property graph, RDF, relational representation или иной relationship / relation substrate;
 - embeddings, lexical search, graph traversal или другой retrieval method;
 - Python или другой implementation language;
 - local, cloud или distributed execution;
@@ -51,6 +51,9 @@ ONLY THEN: IMPLEMENTATION OPTIONS
 TECHNOLOGY ≠ ARCHITECTURE
 IMPLEMENTATION PROFILE ≠ COGNITIVE LAW
 TECHNOLOGY CHANGE ≠ AUTOMATIC ARCHITECTURE CHANGE
+SUBSTRATE-NEUTRAL ≠ UNCHANGEABLE
+IMPLEMENTED ≠ WIRED ≠ ENABLED ≠ PRODUCTION AUTHORITY
+MODEL OUTPUT ≠ CANON
 ```
 
 ## Substrate Replacement Test
@@ -62,20 +65,38 @@ TECHNOLOGY CHANGE ≠ AUTOMATIC ARCHITECTURE CHANGE
 - **YES** → кандидат на архитектурный инвариант, различие или контракт.
 - **NO** → скорее всего implementation profile, technology-specific constraint или experiment.
 
-Этот тест не означает, что архитектура неизменна. Новое evidence может оправдать её пересмотр. Смысл в том, что одна лишь смена implementation technology не должна незаметно переопределять cognition.
+Это классификационная эвристика, а не доказательство универсального закона. Тест не означает, что архитектура неизменна. Новое evidence может оправдать пересмотр архитектурного утверждения. Смысл в том, что одна лишь смена implementation technology не должна незаметно переопределять cognition.
 
-## Связь с CLOS
+## Связь с CLOS и слоями экосистемы
 
 Velantrim Cognitive Life OS (CLOS) — research-first, substrate-neutral blueprint, который исследует, что когнитивная система должна сохранять независимо от конкретной реализации.
 
-Этот репозиторий Cognitive OS — implementation-oriented research surface для текущей model-era реализации, policy, routing, interaction, assurance и memory patterns. Поэтому примеры LLM/model/provider здесь являются **current implementation profiles**, а не фундаментом, который ограничивает CLOS.
+Этот репозиторий Cognitive OS — implementation-oriented research surface для текущей model-era реализации, policy, routing, interaction, assurance и memory patterns. Поэтому примеры LLM/model/provider здесь являются **current implementation profiles**, а не фундаментом, который определяет CLOS.
+
+Связь намеренно слоистая, а не прямая цепочка authority:
 
 ```text
-CLOS / substrate-neutral blueprint
-        ↓ задаёт смысл и необходимые различия
-Cognitive OS / current research + policy surface
-        ↓ исследует способы реализации
-current models · stores · graphs · retrieval · tools · runtimes
+1. SUBSTRATE-NEUTRAL COGNITIVE BLUEPRINT
+   функции · различия · состояния · переходы · uncertainty · revision · authority
+   → CLOS как research blueprint
+
+2. SEMANTIC / COMPOSITION OBLIGATIONS
+   project-local инварианты смысла, истории, provenance, declared loss и non-escalation
+   → Native Kernel + Mentaury-Kernel в пределах их собственных scope
+
+3. ECOSYSTEM / POLICY COMPOSITION
+   ownership, границы взаимодействия и system-level orientation
+   → Ecosystem Map + System OS
+
+4. CURRENT IMPLEMENTATION / RESEARCH PROFILES
+   models · stores · graphs · retrieval · tools · providers · runtimes
+   → текущие owning projects + этот Cognitive OS research surface
+```
+
+```text
+CLOS ФОРМУЛИРУЕТ / ИССЛЕДУЕТ, КАКИЕ РАЗЛИЧИЯ ДОЛЖНЫ ОСТАВАТЬСЯ ОСМЫСЛЕННЫМИ
+        ≠ BINDING IMPLEMENTATION AUTHORITY
+CURRENT OWNERS РЕШАЮТ, КАК ИХ ДОМЕН РЕАЛИЗОВАН
 ```
 
 ## Граница authority
@@ -84,8 +105,11 @@ current models · stores · graphs · retrieval · tools · runtimes
 
 ```text
 CLOS RESULT ≠ OWNER ADOPTION
+RESEARCH ≠ CANON
 RESEARCH ≠ IMPLEMENTATION AUTHORIZATION
-IMPLEMENTATION ≠ RUNTIME AUTHORIZATION
+IMPLEMENTATION ≠ WIRING
+WIRED ≠ ENABLED
+ENABLED ≠ PRODUCTION AUTHORITY
 CURRENT TECHNOLOGY ≠ ARCHITECTURAL AUTHORITY
 ```
 
