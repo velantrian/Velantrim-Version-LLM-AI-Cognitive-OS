@@ -6,6 +6,8 @@
 
 Velantrim Cognitive OS treats an LLM as a **replaceable cognitive processor**, not as the permanent identity of the system.
 
+This repository describes a current model-era research/profile surface. The architecture/implementation separation is defined explicitly in [⚗️ Substrate-Neutral Architecture Boundary](SUBSTRATE_NEUTRAL_BOUNDARY.md); current LLM, storage, graph, retrieval, language, provider and hardware choices do not define the timeless cognitive blueprint.
+
 The persistent system consists of five cooperating planes:
 
 1. ❤️ Interaction Plane

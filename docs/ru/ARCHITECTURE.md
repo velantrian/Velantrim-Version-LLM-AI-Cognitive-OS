@@ -6,6 +6,8 @@
 
 Velantrim Cognitive OS рассматривает LLM как **заменяемый когнитивный процессор**, а не как постоянную личность и не как единственный источник непрерывности системы.
 
+Этот репозиторий описывает текущую model-era research/profile surface. Разделение архитектуры и реализации явно зафиксировано в [⚗️ Границе технологически нейтральной архитектуры](SUBSTRATE_NEUTRAL_BOUNDARY.md); текущие LLM, storage, graph, retrieval, language, provider и hardware choices не определяют timeless cognitive blueprint.
+
 Постоянный интеллект системы складывается из пяти взаимодействующих плоскостей:
 
 1. ❤️ Interaction Plane
