@@ -1,5 +1,13 @@
 # 🚀 Velantrim Version LLM (AI) — Cognitive OS 💫
 
+> 🚀 **A research architecture for pairing human-friendly interaction with replaceable AI capabilities.**
+>
+> **Why:** A model change can improve coding while disrupting the conversational style or task context. Cognitive OS studies separated interaction, routing, verification and memory.
+>
+> **Example:** A task can be directed to a suitable model while the reasoning evidence and current working point remain separate from its prose.
+>
+> **Scope:** Research architecture; no claim that all modules form a running OS.
+
 <div align="center">
 
 🌐 **Language / Язык:** 🇬🇧 **English** · [🇷🇺 Русский](README.ru.md)
